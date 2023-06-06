@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    :root {
+        @apply p-0 m-0 box-border;
+    }
+    body {
+        @apply bg-[#151515];
+    }
+}
+
+@layer components {
+    input::placeholder, textarea::placeholder {
+        font-size: .75rem;
+        color: #8f8f8f;
+    }
+
+    input:focus::placeholder, textarea:focus::placeholder {
+        color: #b8b7b7;
+    } 
+}
